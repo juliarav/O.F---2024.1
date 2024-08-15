@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
 
     public static GameController instance;
 
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,4 +25,8 @@ public class GameController : MonoBehaviour
         scoreText.text = totalScore.ToString ();
     }
 
+    public void ShowGameOver () 
+    {
+        gameOver.SetActive (true);
+    }
 }
