@@ -39,7 +39,7 @@ public class EfeitoDigitador : MonoBehaviour
         {
             if (imprimindo) return;
             imprimindo = true;
-            StartCoroutine (msg);
+            StartCoroutine (LetraPorLetra(msg));
             
         }
     }
