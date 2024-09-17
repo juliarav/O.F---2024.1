@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-
 public class EfeitoDigitador : MonoBehaviour
 {
     private TextMeshProUGUI componentTexto;

@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22977758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22977759}
+  - component: {fileID: 22977760}
+  m_Layer: 0
+  m_Name: LOAD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &22977759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22977758}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5400}
+  m_LocalScale: {x: 60, y: 60, z: 60}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1015757040}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22977760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22977758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e475cc745890074e9709bc027eabc71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cenaParaCarregar: Cutscene
 --- !u!1 &127821296
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &160521066
 RectTransform:
   m_ObjectHideFlags: 0
@@ -292,7 +337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &244162031
 RectTransform:
   m_ObjectHideFlags: 0
@@ -442,7 +487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "H\xE1 muito tempo"
+  m_text: Mas no final o plano falhou, porque todos morreram pelo monstro.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -960,7 +1005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &857605020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1110,7 +1155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "H\xE1 muito tempo"
+  m_text: "As pessoas que l\xE1 residiam planejaram um ataque contra ele."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1246,7 +1291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "H\xE1 muito tempo"
+  m_text: "H\xE1 muito tempo atr\xE1s existia um reino, com um monstro..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1533,9 +1578,10 @@ RectTransform:
   - {fileID: 888974053}
   - {fileID: 160521066}
   - {fileID: 857605020}
-  - {fileID: 244162031}
   - {fileID: 1249299939}
+  - {fileID: 244162031}
   - {fileID: 1319837292}
+  - {fileID: 22977759}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1562,6 +1608,22 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -2846067869041217169, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
     value: {fileID: 1319837297}
+  - key: {fileID: 7704887682864165075, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 127821296}
+  - key: {fileID: 8002637560200032152, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 888974052}
+  - key: {fileID: -8449288387219631730, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 160521065}
+  - key: {fileID: -4493487762254721146, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 857605019}
+  - key: {fileID: -5002390021344829816, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 1249299938}
+  - key: {fileID: 116403209813284284, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 244162030}
+  - key: {fileID: 729843976875778279, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2106357623834438617, guid: 69659907ce3bedb4b9e7f80126a610f3, type: 2}
+    value: {fileID: 22977758}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1249299938
@@ -1581,7 +1643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1249299939
 RectTransform:
   m_ObjectHideFlags: 0
